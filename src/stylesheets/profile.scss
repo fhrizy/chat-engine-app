@@ -1,0 +1,101 @@
+.profile-page {
+  width: 35vw;
+  height: calc(100% - 59.5px);
+  margin-top: 50px;
+  opacity: 0%;
+  left: -35vw;
+  position: fixed;
+  background-color: white;
+  color: white;
+  z-index: 8;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 100%;
+    left: 0;
+    z-index: 8;
+  }
+
+  .profile-container {
+    width: 100%;
+    height: 100px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #023047;
+
+    .profile-photo {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+
+      h1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        color: #023047;
+      }
+    }
+
+    .profile-detail {
+      width: auto;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: row;
+
+      .profile-name {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 18px;
+          display: flex;
+          position: relative;
+        }
+        h3 {
+          font-size: 15px;
+          display: flex;
+          position: relative;
+        }
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+  .profile-menu {
+    width: 100%;
+    height: 60px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #219ebc;
+    cursor: pointer;
+
+    img {
+      width: 25px;
+      height: 25px;
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(148deg)
+        brightness(104%) contrast(102%);
+    }
+    span {
+      margin-left: 15px;
+    }
+    &:hover {
+      background-color: #023047;
+    }
+  }
+}
